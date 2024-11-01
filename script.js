@@ -10,7 +10,6 @@ function updateTimer() {
   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
   const milliseconds = Math.floor(distance % 1000);
 
-  // Sử dụng GSAP để animate
   gsap.to('#days', { duration: 0.5, text: days, ease: "power2.out" });
   gsap.to('#hours', { duration: 0.5, text: hours, ease: "power2.out" });
   gsap.to('#minutes', { duration: 0.5, text: minutes, ease: "power2.out" });
