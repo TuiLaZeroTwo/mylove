@@ -1,19 +1,43 @@
 body {
-  background-color: black;
-  color: white;
-  font-family: sans-serif;
-  text-align: center;
-  margin: 0;
-}
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Màu nền */
+  }
+  
+  .animated-title {
+    animation: titleAnimation 5s infinite;
+  }
+  
+  @keyframes titleAnimation {
+    0% {
+      color: blue;
+      transform: scale(1);
+    }
+    50% {
+      color: red;
+      transform: scale(1.2);
+    }
+    100% {
+      color: blue;
+      transform: scale(1);
+    }
+  }
 
-.timer-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
+  .timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.time-unit {
-  font-size: 5em;
-  margin: 0 10px;
-}
+  .time-unit {
+    font-size: 5rem; /* Kích thước chữ số lớn hơn */
+    margin: 1rem;
+    color: #ff7676; /* Màu chữ */
+  }
+  
+

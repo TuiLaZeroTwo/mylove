@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Đồng hồ đếm ngược</title>
+<title class="animated-title">Tình yêu đôi ta</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="timer-container">
-    <div class="time-unit" id="days">0</div>
-    <div class="time-unit" id="hours">0</div>
-    <div class="time-unit" id="minutes">0</div>
-    <div class="time-unit" id="seconds">0</div>
-    <div class="time-unit" id="milliseconds">0</div>
+  <div class="love-timer">
+    <p>Tình yêu của đôi ta (hlong & lthi) đã được:</p>
+    <div class="timer-container">
+      <div class="time-unit" id="days">
+        <span id="days-value">0</span> Ngày
+      </div>
+      <div class="time-unit" id="hours">
+        <span id="hours-value">0</span> giờ
+      </div>
+      <div class="time-unit" id="minutes">
+        <span id="minutes-value">0</span> phút
+      </div>
+      <div class="time-unit" id="seconds">
+        <span id="seconds-value">0</span> giây
+      </div>
+
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

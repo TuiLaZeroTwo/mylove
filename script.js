@@ -8,14 +8,14 @@ function updateTimer() {
   const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  const milliseconds = Math.floor(distance % 1000);
 
-  gsap.to('#days', { duration: 0.5, text: days, ease: "power2.out" });
-  gsap.to('#hours', { duration: 0.5, text: hours, ease: "power2.out" });
-  gsap.to('#minutes', { duration: 0.5, text: minutes, ease: "power2.out" });
-  gsap.to('#seconds', { duration: 0.5, text: seconds, ease: "power2.out" });
-  gsap.to('#milliseconds', { duration: 0.5, text: milliseconds, ease: "power2.out" });
+  // Cập nhật các giá trị lên giao diện
+  document.getElementById('days-value').textContent = days;
+  document.getElementById('hours-value').textContent = hours;
+  document.getElementById('minutes-value').textContent = minutes;
+  document.getElementById('seconds-value').textContent = seconds;
+
+  requestAnimationFrame(updateTimer);
 }
 
-// Gọi hàm updateTimer() định kỳ
-setInterval(updateTimer, 1000);
+requestAnimationFrame(updateTimer);
