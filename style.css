@@ -1,0 +1,19 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+.timer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.time-unit {
+  font-size: 5em;
+  margin: 0 10px;
+}
