@@ -6,26 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #FFB6C1; /* Màu nền */
-  }
-  
-  .animated-title {
-    animation: titleAnimation 5s infinite;
-  }
-  
-  @keyframes titleAnimation {
-    0% {
-      color: blue;
-      transform: scale(1);
-    }
-    50% {
-      color: red;
-      transform: scale(1.2);
-    }
-    100% {
-      color: blue;
-      transform: scale(1);
-    }
+    background-color: #FFB6C1; 
   }
 
   .timer-container {
@@ -35,9 +16,9 @@ body {
   }
 
   .time-unit {
-    font-size: 5rem; /* Kích thước chữ số lớn hơn */
+    font-size: 5rem; 
     margin: 1rem;
-    color: #ff7676; /* Màu chữ */
+    color: #ff7676; 
   }
   
 

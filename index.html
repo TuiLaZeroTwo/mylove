@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title class="animated-title">💗Tình yêu đôi ta💗</title>
+<title>💗Tình yêu đôi ta💗</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
   <div class="love-timer">
-    <p>💗 Tình yêu của đôi ta (hlong & lthi) đã được:</p>
+    <span id="typed"></span>
+    
     <div class="timer-container">
       <div class="time-unit" id="days">
         <span id="days-value">0</span> Ngày
@@ -22,6 +24,7 @@
       </div>
 
   </div>
-  <script src="script.js"></script>
+  <script src="./scripts/typing.js"></script>
+  <script src="./scripts/lovetimer.js"></script>
 </body>
 </html>

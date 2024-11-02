@@ -9,7 +9,6 @@ function updateTimer() {
   const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Cập nhật các giá trị lên giao diện
   document.getElementById('days-value').textContent = days;
   document.getElementById('hours-value').textContent = hours;
   document.getElementById('minutes-value').textContent = minutes;
