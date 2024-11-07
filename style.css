@@ -21,4 +21,11 @@ body {
     color: #ff7676; 
   }
   
-
+  #typed2 {
+    display: block;
+    margin-bottom: 10px; /* Adjust the margin as needed */
+  }
+  
+  #typed1 {
+    display: block;
+  }
